@@ -5,3 +5,7 @@ ENV/
 
 
 *.log
+
+cache/
+*.cache
+__pycache__/

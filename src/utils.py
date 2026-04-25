@@ -16,7 +16,7 @@ def extract_max_voltage(voltage):
       '110000'          -> 110.0
       '110000;220000'   -> 220.0
       '10 kV; 110 kV'  -> 110.0
-    Returns pd.NA when voltage is missing or unparseable.
+    Returns pd.NA when voltage is missing or unparseable. pd.isna -> idicates whether values are missing
     """
     if pd.isna(voltage):
         return pd.NA

@@ -24,7 +24,7 @@ The data collection phase required careful selection and validation due to the c
 
 ---
 
-## What this project does
+## What This Project Does
 
 The pipeline:
 
@@ -39,33 +39,32 @@ The pipeline:
 
 ---
 
-## Map overview
+## Map Overview
 
-<p align="center">
-  <img src="docs/map_screenshot.png" width="800"/>
-</p>
-
-<p align="center">
-  <img src="docs/map_screenshot2.png" width="800"/>
-</p>
-
+<img src="outputs/docs/map_screenshot.png" width="800"/>
+<img src="outputs/docs/map_screenshot2.png" width="800"/>
 
 ---
 
-##  How to run the project
+## How to Run the Project
 
 ### Run the pipeline
 
 ```bash
 python3 src/main.py
+```
 
-Map --- 
+### Serve the map
+
+```bash
 python -m http.server 5000
-http://localhost:5000/outputs/map.html
+```
 
+Then open: http://localhost:5000/outputs/map.html
 
+---
 
-## Project extensions
+## Project Extensions
 
 This project could be extended in several directions:
 
@@ -88,25 +87,21 @@ This project could be extended in several directions:
    Add logging, tests, configuration files, and clearer pipeline documentation.
 
 7. **Add a weather API for short-term energy prediction**  
-   A strong extension would be to connect the pipeline with a weather forecast API and estimate short-term renewable energy production.
-
-   Instead of using only fixed annual capacity factors, the model could use hourly weather forecasts to predict energy generation for the next hours or days.
+   A strong extension would be to connect the pipeline with a weather forecast API and estimate short-term renewable energy production. Instead of using only fixed annual capacity factors, the model could use hourly weather forecasts to predict energy generation for the next hours or days.
 
    Possible weather inputs:
-
-   - solar radiation / irradiance
-   - cloud cover
-   - temperature
-   - wind speed
-   - wind direction
+   - Solar radiation / irradiance
+   - Cloud cover
+   - Temperature
+   - Wind speed
+   - Wind direction
 
    Possible APIs:
-
    - Open-Meteo API
    - Deutscher Wetterdienst (DWD) Open Data
 
-8. **Deep Learning models for energy analysis**
-    With historical data of wind speed, solar irradiance, temperature, cloud cover etc
-    - LSTM / GRU for time-series forecasting
-    - CNN-LSTM for spatial-temporal energy prediction
-    - Transformer models for longer time-series forecasting
+8. **Deep learning models for energy analysis**  
+   With historical data of wind speed, solar irradiance, temperature, cloud cover, etc., potential approaches include:
+   - LSTM / GRU for time-series forecasting
+   - CNN-LSTM for spatial-temporal energy prediction
+   - Transformer models for longer time-series forecasting

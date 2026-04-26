@@ -1,7 +1,5 @@
 """
 ETL pipeline: Brandenburg wind & solar energy potential
-=======================================================
-
 """
 
 import os

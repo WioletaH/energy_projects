@@ -3,5 +3,4 @@ geopandas>=0.14
 osmnx>=1.9
 shapely>=2.0
 pyproj>=3.6
-rtree
-üüüü
+rtree>=0.9
